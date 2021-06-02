@@ -1,0 +1,44 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#accordion {
+  border: solid;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#OuterLevel {
+  border: solid green;
+  height: 100%;
+  display: flex;
+}
+
+.OuterLevelItem > .label {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  border: solid pink;
+  margin: 1px;
+}
+
+.OuterLevelItem {
+  display: flex;
+}
+
+.InnerLevel {
+  background: purple;
+  width: 50vw;
+}
+
+.InnerLevelItem > .label {
+  border: solid;
+  margin: 1px;
+}
